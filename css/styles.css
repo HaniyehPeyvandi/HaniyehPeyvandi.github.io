@@ -85,6 +85,12 @@ h3 {
 .experience .experience__item {
   display: flex;
   align-items: flex-start;
+  border-bottom: 1px solid var(--color-border);
+  padding: 1.2rem 0;
+}
+.experience .experience__item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .experience__item .experience__img {
@@ -139,4 +145,30 @@ h3 {
 
 .education__details p:nth-child(3) {
   color: var(--color-gray-medium);
+}
+
+/* License */
+.license h2 {
+  margin-bottom: 1.3rem;
+}
+
+.license .license__item {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--color-border);
+  padding: 1.2rem 0;
+}
+
+.license .license__item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.license__item .license__img {
+  width: 50px;
+  margin-right: 1rem;
+}
+
+.license__item .license__img img {
+  width: 100%;
 }
