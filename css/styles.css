@@ -14,3 +14,33 @@
   --color-gray-medium:#86888a;
   --color-gray-light:#caccce;
 }
+
+/* Typography */
+html{
+  font-size: 62.5%;
+}
+
+body{
+  color: var(--color-black);
+  font-size: 1.4rem;
+  line-height: 1.7;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+
+h1 , h2 , h3{
+  color: var(--color-black);
+  font-weight: 600;
+}
+
+h1{
+  font-size: 2.4rem;
+}
+
+h2{
+  font-size: 2rem;
+}
+
+h3{
+  font-size: 1.6rem;
+}
