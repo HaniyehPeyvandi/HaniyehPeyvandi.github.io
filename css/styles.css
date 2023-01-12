@@ -56,7 +56,6 @@ h3 {
 /* Container */
 .container {
   max-width: 800px;
-  /* background-color: #0a66c2; */
   margin: 0 auto;
 }
 
@@ -89,7 +88,7 @@ h3 {
 }
 
 .experience__item .experience__img {
-  width: 70px;
+  width: 50px;
   margin-right: 1rem;
 }
 
@@ -99,5 +98,45 @@ h3 {
 
 .experience__details p:nth-child(3),
 .experience__details p:nth-child(4) {
+  color: var(--color-gray-medium);
+}
+
+/* Education */
+.education h2 {
+  margin-bottom: 1.3rem;
+}
+
+.education .education__item {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--color-border);
+  padding: 1.2rem 0;
+}
+
+.education .education__item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.education__item .education__img {
+  width: 50px;
+  margin-right: 1rem;
+}
+
+.education__item .education__img img {
+  width: 100%;
+}
+
+.education__details h3 a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.education__details h3 a:hover {
+  color: var(--color-blue);
+  text-decoration: underline;
+}
+
+.education__details p:nth-child(3) {
   color: var(--color-gray-medium);
 }
