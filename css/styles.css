@@ -45,3 +45,10 @@ h2{
 h3{
   font-size: 1.6rem;
 }
+
+/* Container */
+.container{
+  max-width: 800px;
+  background-color: #0a66c2;
+  margin: 0 auto;
+}
