@@ -13,6 +13,9 @@
   --color-gray-dark:#313335;
   --color-gray-medium:#86888a;
   --color-gray-light:#caccce;
+  --color-body:#f3f2ef;
+  --color-border:#e0dfdc;
+  --border-radius:0.8rem;
 }
 
 /* Typography */
@@ -26,7 +29,7 @@ body{
   line-height: 1.6;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
-  background-color: #F3F2EF;
+  background-color: var(--color-body);
 }
 
 h1 , h2 , h3{
@@ -49,6 +52,14 @@ h3{
 /* Container */
 .container{
   max-width: 800px;
-  background-color: #0a66c2;
+  /* background-color: #0a66c2; */
   margin: 0 auto;
+}
+
+/* Card */
+.card{
+  background-color: var(--color-white);
+  padding: 1.2rem 2.4rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
 }
