@@ -66,13 +66,38 @@ h3 {
   padding: 2.4rem;
   border-radius: var(--border-radius);
   border: 1px solid var(--color-border);
-}
-
-/* About */
-.card__about h2 {
   margin-bottom: 0.8rem;
 }
 
-.card__about p {
+/* About */
+.about h2 {
+  margin-bottom: 0.8rem;
+}
+
+.about p {
   width: 60%;
+}
+
+/* Experience */
+.experience h2 {
+  margin-bottom: 1.3rem;
+}
+
+.experience .experience__item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.experience__item .experience__img {
+  width: 70px;
+  margin-right: 1rem;
+}
+
+.experience__item .experience__img img {
+  width: 100%;
+}
+
+.experience__details p:nth-child(3),
+.experience__details p:nth-child(4) {
+  color: var(--color-gray-medium);
 }
