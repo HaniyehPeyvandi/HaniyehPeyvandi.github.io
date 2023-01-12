@@ -4,3 +4,13 @@
   margin: 0;
   padding: 0;
 }
+
+/* Root Variables */
+:root{
+  --color-black: #000;
+  --color-white: #fff;
+  --color-blue: #0077b5;
+  --color-gray-dark:#313335;
+  --color-gray-medium:#86888a;
+  --color-gray-light:#caccce;
+}
