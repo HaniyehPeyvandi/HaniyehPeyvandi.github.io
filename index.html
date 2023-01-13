@@ -20,7 +20,49 @@
     />
     <title>Resume</title>
   </head>
+
   <body>
+    <div class="modalContainer">
+      <div class="modal">
+        <div class="modal__header">
+          <p>Haniyeh Peyvandi</p>
+          <span class="closeModal">&times;</span>
+        </div>
+        <div class="modal__details">
+          <p class="modal__title">Contact Info</p>
+          <div class="modal__items">
+            <div class="modal__item">
+              <span><i class="fa-brands fa-linkedin"></i></span>
+              <div>
+                <h3>Your Profile</h3>
+                <a
+                  href="https://www.linkedin.com/in/haniyeh-peyvandi-1561821a4/"
+                  target="_blank"
+                  >linkedin.com/in/haniyeh-peyvandi-1561821a4</a
+                >
+              </div>
+            </div>
+            <div class="modal__item">
+              <span><i class="fa-regular fa-envelope"></i></span>
+              <div>
+                <h3>Email</h3>
+                <a href="mailto:hpeyvandi0@gmail.com" target="_blank"
+                  >hpeyvandi0@gmail.com</a
+                >
+              </div>
+            </div>
+            <div class="modal__item">
+              <span><i class="fa-solid fa-cake-candles"></i></span>
+              <div>
+                <h3>Birthday</h3>
+                <p>May 11</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container">
       <section class="card intro">
         <div class="intro__header">
@@ -34,7 +76,7 @@
             <h3>Frontend Developer</h3>
             <p>
               Semnan Province, Iran &middot;
-              <span class="contactInfo">Contact info</span>
+              <span class="contactInfo openModal">Contact info</span>
             </p>
             <p>154 connections</p>
             <button class="btn btn--connect">
@@ -248,5 +290,7 @@
         </div>
       </section>
     </div>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
