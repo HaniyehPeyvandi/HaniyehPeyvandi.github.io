@@ -30,7 +30,7 @@ body {
   color: var(--color-black);
   font-size: 1.4rem;
   line-height: 1.6;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 400;
   background-color: var(--color-body);
 }
@@ -155,12 +155,14 @@ h3 {
 
 .intro__details .details__left .btn {
   outline: 0;
-  padding: 0.8rem 2rem;
+  padding: 0.5rem 2rem;
   border-radius: 1.6rem;
   margin: 0.5rem;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-size: 1.6rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .intro__details .details__left .btn--connect {
@@ -237,21 +239,20 @@ h3 {
   font-size: 2rem;
 }
 
-.modal__header span{
+.modal__header .closeModal{
   width: 30px;
   height: 30px;
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3.5rem;
-  color: var(--color-gray-dark);
+  color: var(--color-gray-medium);
   transition: background-color 0.3s ease;
 }
 
-.modal__header span:hover{
+.modal__header .closeModal:hover{
   cursor: pointer;
-  background-color: var(--color-gray-light);
+  background-color: #eee;
 }
 
 .modal .modal__details{
@@ -296,7 +297,7 @@ h3 {
 
 /* Experience */
 .experience h2 {
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.2rem;
 }
 
 .experience .experience__item {
@@ -326,7 +327,7 @@ h3 {
 
 /* Education */
 .education h2 {
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.2rem;
 }
 
 .education .education__item {
@@ -366,7 +367,7 @@ h3 {
 
 /* License */
 .license h2 {
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.2rem;
 }
 
 .license .license__item {
@@ -392,7 +393,7 @@ h3 {
 
 /* Skill */
 .skill h2 {
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.2rem;
 }
 
 .skill .skill__item {
@@ -422,7 +423,7 @@ h3 {
 
 /* Language */
 .language h2 {
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.2rem;
 }
 
 .language .language__item {
@@ -441,7 +442,7 @@ h3 {
 
 /* Project */
 .project h2 {
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.2rem;
 }
 
 .project .project__item {
@@ -465,6 +466,8 @@ h3 {
   color: var(--color-gray-medium);
   background-color: var(--color-white);
   border: 1.5px solid var(--color-gray-medium);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
 }
 
 .project__details .btn a{
@@ -480,4 +483,109 @@ h3 {
 
 .project__details .btn a i{
   margin-left: 0.6rem;
+}
+
+/* Interest */
+.card.interest{
+  padding: 0;
+}
+
+.interest h2 {
+  margin-bottom: 1.2rem;
+  padding: 2.4rem 2.4rem 0;
+}
+
+.interest .tab{
+  border-bottom: 1px solid var(--color-border);
+  padding: 0 2rem;
+}
+
+.interest .tab .tabLink{
+  margin-right: 2rem;
+  padding: 1.5rem 0.4rem;
+  border: none;
+  outline: none;
+  background-color: var(--color-white);
+  font-weight: 600;
+  color: var(--color-gray-medium);
+  cursor: pointer;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.4rem;
+}
+
+.interest .tab .tabLink.active{
+  border-bottom: 2px solid #057642;
+  color: #057642;
+}
+
+.interest .interest__items{
+  padding: 0 2.4rem 2.4rem;
+}
+
+.interest .interest__items .tabContent{
+  display: none;
+}
+
+.interest .interest__items .tabContent.active{
+  display: block;
+}
+
+.interest .interest__item {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--color-border);
+  padding: 1.2rem 0;
+}
+
+.interest .interest__item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.interest__item .interest__img {
+  width: 50px;
+  margin-right: 1rem;
+}
+
+.interest__item .interest__img img {
+  width: 100%;
+}
+
+.interest__details h3 a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.interest__details h3 a:hover {
+  color: var(--color-blue);
+  text-decoration: underline;
+}
+
+.interest__details p {
+  color: var(--color-gray-medium);
+}
+
+.interest__details .btn {
+  outline: 0;
+  padding: 0.5rem 1.8rem;
+  border-radius: 1.6rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0.5rem 0;
+  color: var(--color-gray-medium);
+  background-color: var(--color-white);
+  border: 1.5px solid var(--color-gray-medium);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.interest__details .btn:hover {
+  border-width: 2px;
+  background-color: rgba(234, 234, 234, 0.8);
+  margin: 0.45rem 0;
+}
+
+.interest__details .btn i{
+  margin-right: 0.6rem;
 }
