@@ -18,6 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Resume</title>
     <link rel="icon" type="image/png" href="assets/images/programmer.png" />
   </head>
@@ -99,7 +100,7 @@
           </div>
         </div>
       </section>
-      <section class="card about">
+      <section class="card about" data-aos="fade-up" data-aos-duration="1000">
         <h2>About</h2>
         <p>
           I started web development in 2020. First, I learned HTML, CSS and
@@ -110,7 +111,7 @@
           never stop and I will always try to keep my knowledge up to date.
         </p>
       </section>
-      <section class="card experience">
+      <section class="card experience" data-aos="fade-up" data-aos-duration="1000">
         <h2>Experience</h2>
         <div class="experience__items">
           <div class="experience__item">
@@ -130,7 +131,7 @@
           </div>
         </div>
       </section>
-      <section class="card education">
+      <section class="card education" data-aos="fade-up" data-aos-duration="1000">
         <h2>Education</h2>
         <div class="education__items">
           <div class="education__item">
@@ -176,7 +177,7 @@
           </div>
         </div>
       </section>
-      <section class="card license">
+      <section class="card license" data-aos="fade-up" data-aos-duration="1000">
         <h2>Licenses & certifications</h2>
         <div class="license__items">
           <div class="license__item">
@@ -211,7 +212,7 @@
           </div>
         </div>
       </section>
-      <section class="card skill">
+      <section class="card skill" data-aos="fade-up" data-aos-duration="1000">
         <h2>Skills</h2>
         <div class="skill__items">
           <div class="skill__item">
@@ -290,7 +291,7 @@
           </div>
         </div>
       </section>
-      <section class="card language">
+      <section class="card language" data-aos="fade-up" data-aos-duration="1000">
         <h2>Languages</h2>
         <div class="language__items">
           <div class="language__item">
@@ -307,7 +308,7 @@
           </div>
         </div>
       </section>
-      <section class="card project">
+      <section class="card project" data-aos="fade-up" data-aos-duration="1000">
         <h2>Projects</h2>
         <div class="project__items">
           <div class="project__item">
@@ -410,7 +411,7 @@
           </div>
         </div>
       </section>
-      <section class="card interest">
+      <section class="card interest" data-aos="fade-up" data-aos-duration="1000">
         <h2>Interests</h2>
         <div class="tab">
           <button class="tabLink active" onclick="showContent(event, 'Companies')">Companies</button>
@@ -481,6 +482,10 @@
       </section>
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./js/main.js"></script>
   </body>
 </html>
