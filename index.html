@@ -27,7 +27,7 @@
       <div class="modal">
         <div class="modal__header">
           <p>Haniyeh Peyvandi</p>
-          <span class="closeModal">&times;</span>
+          <span class="closeModal"><i class="fa-solid fa-xmark"></i></span>
         </div>
         <div class="modal__details">
           <p class="modal__title">Contact Info</p>
@@ -35,7 +35,7 @@
             <div class="modal__item">
               <span><i class="fa-brands fa-linkedin"></i></span>
               <div>
-                <h3>Your Profile</h3>
+                <h3>Profile</h3>
                 <a
                   href="https://www.linkedin.com/in/haniyeh-peyvandi-1561821a4/"
                   target="_blank"
@@ -406,6 +406,75 @@
                   ></i
                 ></a>
               </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="card interest">
+        <h2>Interests</h2>
+        <div class="tab">
+          <button class="tabLink active" onclick="showContent(event, 'Companies')">Companies</button>
+          <button class="tabLink" onclick="showContent(event, 'Groups')">Groups</button>
+        </div>
+        <div class="interest__items">
+          <div class="tabContent active" id="Companies">
+            <div class="interest__item">
+              <div class="interest__img">
+                <a href="https://www.linkedin.com/company/tapsi/" target="_blank"><img src="assets/images/tapsi.jpg" alt="Tapsi-logo" /></a>
+              </div>
+              <div class="interest__details">
+                <h3>
+                  <a href="https://www.linkedin.com/company/tapsi/" target="_blank">TAPSI</a>
+                </h3>
+                <p>35,177 followers</p>
+                <button class="btn">
+                  <i class="fa-solid fa-check"></i>Following
+                </button>
+              </div>
+            </div>
+            <div class="interest__item">
+              <div class="interest__img">
+                <a href="https://www.linkedin.com/company/farabinvest/" target="_blank"><img src="assets/images/farabi.jpg" alt="Farabi-logo" /></a>
+              </div>
+              <div class="interest__details">
+                <h3>
+                  <a href="https://www.linkedin.com/company/farabinvest/" target="_blank">Farabi Brokerage Co.</a>
+                </h3>
+                <p>2,276 followers</p>
+                <button class="btn">
+                  <i class="fa-solid fa-check"></i>Following
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="tabContent" id="Groups">
+            <div class="interest__item">
+              <div class="interest__img">
+                <a href="https://www.linkedin.com/groups/12730451/" target="_blank"><img src="assets/images/ba-ham.jpg" alt="BaHam-logo" /></a>
+              </div>
+              <div class="interest__details">
+                <h3>
+                  <a href="https://www.linkedin.com/groups/12730451/" target="_blank">با هم برای هم</a>
+                </h3>
+                <p>684 members</p>
+                <button class="btn">
+                  <i class="fa-solid fa-check"></i>Joined
+                </button>
+              </div>
+            </div>
+            <div class="interest__item">
+              <div class="interest__img">
+                <a href="https://www.linkedin.com/groups/6519652/" target="_blank"><img src="assets/images/react-devs.jpg" alt="ReactDevs-logo" /></a>
+              </div>
+              <div class="interest__details">
+                <h3>
+                  <a href="https://www.linkedin.com/groups/6519652/" target="_blank">React Developers - ReactJS & React Native Professional Development Mastermind</a>
+                </h3>
+                <p>187,408 members</p>
+                <button class="btn">
+                  <i class="fa-solid fa-check"></i>Joined
+                </button>
+              </div>
             </div>
           </div>
         </div>
