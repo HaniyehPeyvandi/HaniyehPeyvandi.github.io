@@ -28,7 +28,7 @@ function showContent(event, tabName) {
   document.getElementById(tabName).classList.add("active");
 }
 
-// Show more and show less in skill section
+// Show more/less button in skill section
 const skillFooter = document.querySelector(".skill__footer");
 const skillFooterText = document.querySelector(".skill__footerText");
 const skillFooterIcon = document.querySelector(
@@ -55,5 +55,35 @@ skillFooter.addEventListener("click", (e) => {
   skillShown.forEach((item) => {
     item.classList.toggle("skill__shown");
     item.classList.toggle("skill__hidden");
+  });
+});
+
+// Show more/less button in project section
+const projectFooter = document.querySelector(".project__footer");
+const projectFooterText = document.querySelector(".project__footerText");
+const projectFooterIcon = document.querySelector(
+  ".project__footer .fa-chevron-down"
+);
+
+const projectHidden = document.querySelectorAll(".project__hidden");
+const projectShown = document.querySelectorAll(".project__shown");
+
+projectFooter.addEventListener("click", (e) => {
+  if (projectFooterText.innerHTML === "Show all projects") {
+    projectFooterText.innerHTML = "Show less";
+    projectFooterIcon.style.transform = "rotate(-180deg)";
+  } else {
+    projectFooterText.innerHTML = "Show all projects";
+    projectFooterIcon.style.transform = "rotate(0deg)";
+  }
+
+  projectHidden.forEach((item) => {
+    item.classList.toggle("project__shown");
+    item.classList.toggle("project__hidden");
+  });
+
+  projectShown.forEach((item) => {
+    item.classList.toggle("project__shown");
+    item.classList.toggle("project__hidden");
   });
 });
