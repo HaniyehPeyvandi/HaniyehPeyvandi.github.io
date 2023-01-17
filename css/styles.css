@@ -316,6 +316,7 @@ h3 {
 .experience__item .experience__img {
   width: 50px;
   margin-right: 1rem;
+  flex-shrink: 0;
 }
 
 .experience__item .experience__img img {
@@ -347,6 +348,7 @@ h3 {
 .education__item .education__img {
   width: 50px;
   margin-right: 1rem;
+  flex-shrink: 0;
 }
 
 .education__item .education__img img {
@@ -387,6 +389,7 @@ h3 {
 .license__item .license__img {
   width: 50px;
   margin-right: 1rem;
+  flex-shrink: 0;
 }
 
 .license__item .license__img img {
@@ -635,6 +638,7 @@ h3 {
 .interest__item .interest__img {
   width: 50px;
   margin-right: 1rem;
+  flex-shrink: 0;
 }
 
 .interest__item .interest__img img {
