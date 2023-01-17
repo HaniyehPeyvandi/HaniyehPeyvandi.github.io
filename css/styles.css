@@ -59,6 +59,13 @@ h3 {
 .container {
   max-width: 800px;
   margin: 0 auto;
+  padding: 1rem 0 0.5rem;
+}
+
+@media screen and (max-width:992px) {
+  .container{
+    padding: 1rem 1rem 0.5rem;
+  }
 }
 
 /* Card */
@@ -108,6 +115,7 @@ h3 {
 
 .intro__details .details__right {
   margin-right: 4rem;
+  display: block;
 }
 
 .intro__details .details__right a {
@@ -133,12 +141,24 @@ h3 {
   font-weight: 400;
 }
 
-.intro__details .details__left p:nth-child(3) {
+.intro__details .details__left a.university{
+  color: var(--color-gray-medium);
+  margin: 0.2rem 0;
+  text-decoration: none;
+  display: none;
+}
+
+.intro__details .details__left a.university:hover{
+  text-decoration: underline;
+  color: var(--color-blue);
+}
+
+.intro__details .details__left p.location {
   color: var(--color-gray-medium);
   margin: 0.2rem 0;
 }
 
-.intro__details .details__left p:nth-child(4) {
+.intro__details .details__left p.connection {
   font-weight: 600;
   color: var(--color-blue);
   margin: 0.2rem 0 1rem;
@@ -156,9 +176,9 @@ h3 {
 
 .intro__details .details__left .btn {
   outline: 0;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1.3rem;
   border-radius: 1.6rem;
-  margin: 0.5rem;
+  margin: 0.2rem;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -194,7 +214,7 @@ h3 {
 .intro__details .details__left .btn--msg:hover {
   border-width: 2px;
   background-color: rgba(10, 102, 194, 0.2);
-  margin: 0.45rem;
+  margin: 0.15rem;
 }
 
 .intro__details .details__left .btn--more {
@@ -206,7 +226,42 @@ h3 {
 .intro__details .details__left .btn--more:hover {
   border-width: 2px;
   background-color: rgba(234, 234, 234, 0.8);
-  margin: 0.45rem;
+  margin: 0.15rem;
+}
+
+.intro__details .details__left .btn--more span{
+  display: inline;
+}
+
+.intro__details .details__left .btn--more i{
+  display: none;
+}
+
+@media screen and (max-width:992px) {
+  .intro__details .details__left a.university{
+    display: block;
+  }
+
+  .intro__details .details__right{
+    display: none;
+  }
+
+  .intro__details .details__left .btn--more{
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro__details .details__left .btn--more span{
+    display: none;
+  }
+
+  .intro__details .details__left .btn--more i{
+    display: inline;
+  }
 }
 
 /* Modal */
@@ -295,6 +350,12 @@ h3 {
 
 .about p {
   width: 60%;
+}
+
+@media screen and (max-width:992px) {
+  .about p {
+    width: 100%;
+  }
 }
 
 /* Experience */
