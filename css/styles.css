@@ -62,8 +62,8 @@ h3 {
   padding: 1rem 0 0.5rem;
 }
 
-@media screen and (max-width:992px) {
-  .container{
+@media screen and (max-width: 992px) {
+  .container {
     padding: 1rem 1rem 0.5rem;
   }
 }
@@ -141,14 +141,14 @@ h3 {
   font-weight: 400;
 }
 
-.intro__details .details__left a.university{
+.intro__details .details__left a.university {
   color: var(--color-gray-medium);
   margin: 0.2rem 0;
   text-decoration: none;
   display: none;
 }
 
-.intro__details .details__left a.university:hover{
+.intro__details .details__left a.university:hover {
   text-decoration: underline;
   color: var(--color-blue);
 }
@@ -229,24 +229,24 @@ h3 {
   margin: 0.15rem;
 }
 
-.intro__details .details__left .btn--more span{
+.intro__details .details__left .btn--more span {
   display: inline;
 }
 
-.intro__details .details__left .btn--more i{
+.intro__details .details__left .btn--more i {
   display: none;
 }
 
-@media screen and (max-width:992px) {
-  .intro__details .details__left a.university{
+@media screen and (max-width: 992px) {
+  .intro__details .details__left a.university {
     display: block;
   }
 
-  .intro__details .details__right{
+  .intro__details .details__right {
     display: none;
   }
 
-  .intro__details .details__left .btn--more{
+  .intro__details .details__left .btn--more {
     border-radius: 100%;
     width: 35px;
     height: 35px;
@@ -255,11 +255,11 @@ h3 {
     align-items: center;
   }
 
-  .intro__details .details__left .btn--more span{
+  .intro__details .details__left .btn--more span {
     display: none;
   }
 
-  .intro__details .details__left .btn--more i{
+  .intro__details .details__left .btn--more i {
     display: inline;
   }
 }
@@ -352,7 +352,7 @@ h3 {
   width: 60%;
 }
 
-@media screen and (max-width:992px) {
+@media screen and (max-width: 992px) {
   .about p {
     width: 100%;
   }
